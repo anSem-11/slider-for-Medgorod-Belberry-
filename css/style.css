@@ -1,0 +1,664 @@
+/* Specifications */
+
+@font-face {
+  font-family: 'Proxima Nova';
+  src:url('../fonts/ProximaNova-Regular.woff') format('woff');
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+ 
+@font-face {
+  font-family: 'Proxima Nova';
+  src:url('../fonts/ProximaNova-Bold.woff') format('woff');
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
+}
+ 
+@font-face {
+  font-family: 'Proxima Nova';
+  src:url('../fonts/ProximaNova-Extrabld.woff') format('woff');
+  font-weight: 800;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+	font-family: 'MuseoSansCyrl';
+	src: url('../fonts/MuseoSansCyrl-500.woff') format('woff');
+    font-display: swap;
+    font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'MuseoSansCyrl';
+    src: url('../fonts/MuseoSansCyrl-700.woff') format('woff');
+    font-display: swap;
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+	font-family: 'MuseoSansCyrl';
+	src: url('../fonts/MuseoSansCyrl-300.woff') format('woff');
+    font-display: swap;
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+	font-family: 'MuseoSansCyrl';
+	src: url('../fonts/MuseoSansCyrl-900.woff') format('woff');
+    font-display: swap;
+    font-weight: 900;
+    font-style: normal;
+}
+
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+  display: inline;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #014751;
+  margin: 0;
+}
+
+html,
+body {
+  height: 100%;
+  line-height: 1;
+  font-family: 'Proxima Nova';
+}
+
+.container {
+  max-width: 1312px;
+  margin: 0 auto;
+}
+
+.wrapper {
+  min-height: 100%;
+}
+
+button {
+  font-family: 'Proxima Nova';
+}
+
+/* Header */
+
+.header {
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #FFFFFF;
+}
+
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  padding: 14px 0px 12px 0px;
+  border-bottom: 1px solid rgba(233, 233, 233, 0.8);
+}
+
+.header__logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 344px;
+  height: 76px;
+}
+
+.header__line {
+  border-left: 1px solid rgba(233, 233, 233, 0.8);
+  height: 50.5px;
+  margin: 0 32px 0 40px;
+}
+
+.location {
+  color: #014751;
+  font-weight: 700;
+}
+
+.location__link {
+  color: #014751;
+  font-size: 20px;
+}
+
+.location__clinics {
+  font-size: 14px;
+}
+
+.location__clinics-grey {
+  color: #878787;
+}
+
+.contacts {
+  display: flex;
+  align-items: center;
+}
+
+.contacts__item {
+  margin-right: 4px;
+}
+
+.contacts__appointment__item {
+  display: block;
+  font-size: 14px;
+  font-weight: 400;
+  text-align: right;
+}
+
+.contacts__appointment__item > a {
+  color: #035063;
+}
+
+.contacts__appointment__item > a:hover {
+  opacity: 60%;
+}
+
+.phone {
+  font-size: 24px;
+  font-weight: 700;
+  margin-left: 12px;
+}
+
+.mail {
+  font-weight: 600;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 0px 17px 0px;
+}
+
+.mobile__burger {
+  display: none;
+}
+
+.burger {
+  margin-right: 16px;
+}
+
+.navigation__item > a {
+  font-size: 16px;
+  font-weight: 800;
+  color: #035063;
+  padding: 0 31px;
+}
+
+.navigation__item:not(:last-child) {
+  border-right: 1px solid rgba(233, 233, 233, 0.8);
+}
+
+.navigation__item > a:hover {
+  color: #11839E;
+}
+
+.active > a {
+  color: #11839E;
+}
+
+.navigation__button {
+  width: 200px;
+  height: 48px;
+  background: #FF7512;
+  color: #FFFFFF;
+  font-size: 16px;
+  font-weight: 700;
+  border-radius: 38px;
+}
+
+/* Offers */
+
+.offers {
+  background: linear-gradient(to bottom, #EFEFEF, #FFFFFF 30%),
+  url('../img/backgroundimg.png');
+}
+
+.offers__navigation {
+  display: flex;
+  align-items: center;
+  padding: 24px 0px 22px 0px;
+}
+
+.offers__button {
+  width: 35px;
+  height: 35px;
+  color: #014751;
+  border-radius: 8px;
+  margin-right: 20px;
+}
+
+i {
+  border: solid #014751;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 3px;
+}
+
+.left {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
+
+.offers__link {
+  color: rgba(3, 80, 99, 0.7);
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.offers__dot {
+  width: 5px;
+  height: 5px;
+  background: rgba(3, 80, 99, 0.7);
+  border-radius: 100%;
+  margin: 0 12px;
+}
+
+
+.offers__title {
+  font-family: 'MuseoSansCyrl';
+  font-size: 36px;
+  font-weight: 600;
+  margin-bottom: 25px;
+}
+
+.offers__subtitle {
+  font-family: 'MuseoSansCyrl';
+  font-size: 20px;
+  font-weight: 400;
+  max-width: 663px;
+  margin-bottom: 11px;
+}
+
+/* Slider */
+
+
+.slider__info {
+  background: url('../img/slider_background.jpg') no-repeat;
+  background-position: bottom;
+  display: flex;
+  justify-content: space-between;
+  max-height: 556px;
+  margin-bottom: 50px;
+}
+
+.ekg__info,
+.uzi__info {
+  margin-top: 56px;
+}
+
+.priem__info {
+  margin-top: 38px;
+}
+
+.slider__text {
+  margin-top: 56px;
+  margin-left: 69px ;
+}
+
+.ekg__text {
+  margin-top: 74px;
+}
+
+.uzi__text {
+  margin-top: 104px;
+}
+
+.priem__text {
+  margin-top: 18px;
+}
+
+.slider__btn-offer {
+  width: 81px;
+  height: 29px;
+  color: #ffff;
+  background-color: #035063;
+  cursor: pointer;
+  border-radius: 3.5px;
+}
+
+.terapevt__btn {
+  margin-top: 66px;
+  margin-bottom: 14px;
+}
+
+.analizy__btn {
+  margin-top: 64px;
+  margin-bottom: 19px;
+}
+
+.ekg__btn {
+  margin-bottom: 35px;
+}
+
+.uzi__btn {
+  margin-bottom: 32px;
+}
+
+.priem__btn {
+  margin-top: 65px;
+  margin-bottom: 42px;
+}
+
+.slider__title {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 25px;
+  width: 564px;
+}
+
+.analizy__title {
+  width: 604px;
+}
+
+.uzi__title,
+.priem__title {
+  margin-bottom: 10px;
+}
+
+.slider__discount {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.old-price {
+  font-size: 20px;
+  color: #333333;
+  font-weight: 600;
+  text-decoration: line-through;
+  margin-right: 49px;
+}
+
+.discount-card {
+  position: relative;
+  width: 56px;
+  height: 29px;
+  font-size: 14px;
+  font-weight: 700;
+  color: #FFFFFF;
+  background-color: #FF7512;
+  border-radius: 5px;
+  text-align: center;
+  padding-top: 7px;
+}
+
+.discount-card::after{
+  content: ''; 
+  position: absolute;
+  right: 56px; 
+  top: 8px;
+  border: 7px solid transparent; 
+  border-right: 8px solid #FF7512;
+}
+
+.slider__price {
+  font-size: 46px;
+  font-weight: 800;
+  color: #035063;
+  margin-bottom: 7px;
+}
+
+.slider__subtitle {
+  font-size: 36px;
+  font-weight: 700;
+  color: #035063;
+  margin-bottom: 7px;
+}
+
+.priem__subtitle {
+  margin-bottom: 22px;
+}
+
+.rub {
+  font-size: 36px;
+}
+
+.slider__date {
+  font-size: 14px;
+  color: #333333;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+
+.slider__btn {
+  width: 200px;
+  height: 50px;
+  color: #FFFFFF;
+  font-size: 18px;
+  font-weight: 700;
+  border-radius: 40px;
+  cursor: pointer;
+}
+
+.orange {
+  background-color: #FF7512;
+  margin-right: 20px;
+}
+
+.green {
+  background-color: #035063B2;
+}
+
+.nursery__picture {
+  margin-right: 108px;
+}
+
+.ekg__picture {
+  margin-top: 40px;
+  margin-left: -50px;
+}
+
+.uzi__picture {
+  margin-top: 83px;
+  margin-right: 101px;
+}
+
+.doctor__picture {
+  margin-right: 152px;
+}
+
+.slick-track {
+  display: flex;
+}
+
+.slick-list {
+  overflow: hidden;
+}
+
+.slider {
+  position: relative;
+}
+
+.slider .slick-arrow {
+  position: absolute;
+  top: 50%;
+  z-index: 11;
+  font-size: 0;
+  width: 11px;
+  height: 60px;
+  margin: -30px 0px 0px 0px;
+  cursor: pointer;
+}
+
+.slider .slick-arrow.slick-prev{
+  left: -30px;
+  background: url('../img/prev.png') 0 0 / 100% no-repeat;
+}
+
+.slider .slick-arrow.slick-next{
+  right: -30px; 
+  background: url('../img/next.png') 0 0 / 100% no-repeat;
+}
+
+/* Adaptive */
+
+@media (max-width: 1024px) {
+  .container {
+    padding: 0 15px;
+  }
+
+  .logo {
+    width: 150px;
+    height: auto;
+  }
+
+  .header__line {
+    margin: 0 15px;
+  }
+
+  .location__clinics {
+    display: none;
+  }
+
+  .contacts__item {
+    margin-right: 15px;
+  }
+
+  .phone {
+    font-size: 20px;
+  }
+
+  .navigation {
+    padding-top: 24px;
+  }
+
+  .navigation__home {
+    display: none;
+  }
+
+  .navigation__item > a {
+    font-size: 14px;
+    padding: 0 10px;
+  }
+
+  .navigation__search {
+    display: none;
+  }
+
+  .navigation__button {
+    width: 100px;
+    font-size: 14px;
+    font-weight: 400;
+  }
+
+  .offers__navigation {
+    padding-bottom: 35px;
+  }
+
+  .slider__picture {
+    display: none;
+  }
+
+  .slider__info {
+    margin-top: 20px;
+    height: 500px;
+  }
+
+  .slider__btn-offer {
+    margin-top: 0;
+  }
+
+  .slider__text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .slider .slick-arrow {
+    display: none;
+  }
+}
+
+@media (max-width: 425px) {
+  .header__line,
+  .location,
+  .contacts__appointment__list,
+  .contacts__appointment__item,
+  .navigation__list,
+  .slider__btn-offer {
+    display: none;
+  }
+
+  .contacts__item {
+    margin-right: 5px;
+  }
+
+  .mobile__burger {
+    display: flex;
+    margin-left: 10px;
+  }
+
+  .navigation__button {
+    width: 200px;
+    height: 48px;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 38px;
+    margin-right: 10px;
+  }
+
+  .offers__title {
+    text-align: center;
+    font-size: 30px;
+  }
+
+  .offers__subtitle {
+    text-align: justify;
+    font-size: 17px;
+  }
+
+  .slider__info {
+    width: 100%;
+    height: 440px;
+  }
+
+  .slider__text {
+    width: 100%;
+  }
+
+  .slider__title {
+    width: 310px;
+    font-size: 22px;
+  }
+
+  .slider__btn {
+    margin: 10px 0;
+  }
+}
+

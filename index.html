@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Медгород_Акции</title>
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <div class="wrapper">
+    <!-- Header -->
+    <header class="header">
+      <div class="container">
+        <div class="header-top">
+          <div class="header__logo">
+            <img src="./img/logo.png" alt="Медгород" class="logo">
+            <span class="header__line"></span>
+            <div class="location">
+              <a class="location__link" href="#"><img src="./img/location.png"> Москва</a>
+              <div class="location__clinics">7 клиник <span class="location__clinics-grey">рядом с вами</span></div>
+            </div>
+          </div>
+          <div class="contacts">
+            <ul class="contacts__list">
+              <li class="contacts__item">
+                <a href="tel:+74955404803"><img src="./img/phone_icon.png" alt="phone"></a>
+              </li>
+              <li class="contacts__item">
+                <a href="#"><img src="./img/telegram_icon.png" alt="telegram"></a>
+              </li>
+              <li class="contacts__item">
+                <a href="#"><img src="./img/whatsapp_icon.png" alt="whatsapp"></a>
+              </li>
+            </ul>
+            <ul class="contacts__appointment__list">
+              <li class="contacts__appointment__item">
+              <a href="#">Запись на прием</a> 
+              </li>
+              <li class="contacts__appointment__item">
+              <a href="tel:+74955404803" class="phone">8 (495) 540-48-03</a>
+              </li>
+              <li class="contacts__appointment__item">
+              <a href="mailto:medgorod@bk.ru" class="mail">medgorod@bk.ru</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <nav class="navigation">
+          <a class="mobile__burger" href="#"><img src="./img/burger.png"></a>
+          <a href="#" class="navigation__home"><img src="./img/home_icon.png" alt="home"></a>
+          <ul class="navigation__list">
+            <li class="navigation__item">
+              <a href="#"><img class="burger" src="./img/burger.png">УСЛУГИ</a>
+            </li>
+            <li class="navigation__item">
+              <a href="#">О КЛИНИКЕ</a>
+            </li>
+            <li class="navigation__item">
+              <a href="#">ВРАЧИ</a>
+            </li>
+            <li class="navigation__item">
+              <a href="#">ЦЕНЫ</a>
+            </li>
+            <li class="navigation__item">
+              <a href="#">ОТЗЫВЫ</a>
+            </li>
+            <li class="navigation__item active">
+              <a href="#">АКЦИИ</a>
+            </li>
+            <li class="navigation__item">
+              <a href="#">КЛИНИКИ</a>
+            </li>
+          </ul>
+          <a href="#" class="navigation__search"><img src="./img/icon__search.png" alt="search"></a>
+          <button class="navigation__button">Обратный звонок</button>
+        </nav>
+      </div>
+    </header>
+    <!-- Header -->
+
+    <!-- Slider -->
+    <section class="offers">
+      <div class="container">
+        <div class="offers__navigation">
+          <button class="offers__button"><i class="arrow left"></i></button>
+          <a class="offers__link" href="#">Главная</a>
+          <span class="offers__dot"></span>
+          <a class="offers__link" href="#">Акции</a>
+        </div>
+        <h2 class="offers__title">Акции и спецпредложения</h2>
+        <h3 class="offers__subtitle">В данном разделе представлены акции от сети клиник «Медгород», представленная здесь информация полностью актуальна.</h3>
+        <div class="slider">
+          <div class="slider__item">
+            <div class="slider__info">
+              <div class="slider__text">
+                <button class="slider__btn-offer terapevt__btn">Акция</button>
+                <h1 class="slider__title">Он-лайн консультация любого врача-терапевта</h1>
+                <div class="slider__discount">
+                  <p class="old-price">1 700 руб.</p>
+                  <div class="discount-card">-30%</div>
+                </div>
+                <p class="slider__price">1 190 <span class="rub"> руб.</span></p>
+                <p class="slider__date">Акция действует до 30.09.2021 г.</p>
+                <div class="slider__btns">
+                  <button class="slider__btn orange">Записаться</button>
+                  <button class="slider__btn green">Подробнее</button>
+                </div>
+              </div>
+              <img src="./img/slide1.png" alt="Доктор" class="slider__picture">
+            </div>
+          </div>
+          <div class="slider__item">
+            <div class="slider__info">
+              <div class="slider__text">
+                <button class="slider__btn-offer analizy__btn">Акция</button>
+                <h1 class="slider__title analizy__title">Расшифровка анализов у любого доктора</h1>
+                <div class="slider__discount">
+                  <p class="old-price">800 руб.</p>
+                  <div class="discount-card">-30%</div>
+                </div>
+                <p class="slider__price">500 <span class="rub"> руб.</span></p>
+                <p class="slider__date">Акция действует до 30.09.2021 г.</p>
+                <div class="slider__btns">
+                  <button class="slider__btn orange">Записаться</button>
+                  <button class="slider__btn green">Подробнее</button>
+                </div>
+              </div>
+              <img src="./img/slide2.png" alt="Доктор" class="slider__picture nursery__picture">
+            </div>
+          </div>
+          <div class="slider__item">
+            <div class="slider__info ekg__info">
+              <div class="slider__text ekg__text">
+                <button class="slider__btn-offer ekg__btn">Акция</button>
+                <h1 class="slider__title">ЭКГ + ЭХО-КГ</h1>
+                <div class="slider__discount">
+                  <p class="old-price">4 150 руб.</p>
+                  <div class="discount-card">-30%</div>
+                </div>
+                <p class="slider__price">2 900 <span class="rub"> руб.</span></p>
+                <p class="slider__date">Акция действует до 30.09.2021 г.</p>
+                <div class="slider__btns">
+                  <button class="slider__btn orange">Записаться</button>
+                  <button class="slider__btn green">Подробнее</button>
+                </div>
+              </div>
+              <img src="./img/slide3.png" alt="Доктор" class="slider__picture ekg__picture">
+            </div>
+          </div>
+          <div class="slider__item">
+            <div class="slider__info uzi__info">
+              <div class="slider__text uzi__text">
+                <button class="slider__btn-offer uzi__btn">Акция</button>
+                <h1 class="slider__title uzi__title">УЗИ</h1>
+                <p class="slider__subtitle">-50% на вторую локацию</p>
+                <p class="slider__date">Акция действует до 30.09.2021 г.</p>
+                <div class="slider__btns">
+                  <button class="slider__btn orange">Записаться</button>
+                  <button class="slider__btn green">Подробнее</button>
+                </div>
+              </div>
+              <img src="./img/slide4.png" alt="Доктор" class="slider__picture uzi__picture">
+            </div>
+          </div>
+          <div class="slider__item">
+            <div class="slider__info priem__info">
+              <div class="slider__text priem__text">
+                <button class="slider__btn-offer priem__btn">Акция</button>
+                <h1 class="slider__title priem__title">Прием любого врача</h1>
+                <div class="slider__subtitle priem__subtitle">+ УЗИ + ЭКГ
+                </div>
+                <p class="slider__price">4 200 <span class="rub"> руб.</span></p>
+                <p class="slider__date">Акция действует до 30.09.2021 г.</p>
+                <div class="slider__btns">
+                  <button class="slider__btn orange">Записаться</button>
+                  <button class="slider__btn green">Подробнее</button>
+                </div>
+              </div>
+              <img src="./img/slide5.png" alt="Доктор" class="slider__picture doctor__picture">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Slider -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./js/slick.min.js"></script>
+    <script src="./js/script.js"></script>
+  </div>
+</body>
+</html>
