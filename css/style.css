@@ -242,8 +242,13 @@ button {
 /* Offers */
 
 .offers {
-  background: linear-gradient(to bottom, #EFEFEF, #FFFFFF 30%),
-  url('../img/backgroundimg.png');
+  background: linear-gradient(to bottom, #EFEFEF, #FFFFFF 30%);
+}
+
+.offers__container {
+  background: url('../img/backgroundimg.png') no-repeat;
+  background-position-x: 88%;
+  background-position-y: 2%;
 }
 
 .offers__navigation {
